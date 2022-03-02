@@ -156,24 +156,51 @@ nav a {
   display: flex;
 }
 
-h4 {
+.dashboard{
+  padding: 15px;
   padding-left: 15px;
 }
 
-.dashboard{
-  padding: 15px;
+.dashboard-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gray-background{
+  height: 50px;
+  flex-grow: 1;
+  background-color: #f7f7f7;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 .alert-container{
-  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 15px;
+  background-color:#7477bf;
+  color: white;
+  border-radius: 5px;
 }
 
 .alert{
-  padding: 10px;
   font-size: 13px;
-  border-radius: 5px;
-  background-color:#7477bf;
-  color: white;
+}
+
+.data-set{
+  margin:15px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.social-icon{
+  background-color: #7477bf;
+  padding: 25px;
+  border-radius: 50%;
+  fill:white;
 }
 
 @media (min-width: 768px) {
