@@ -45,35 +45,50 @@
       </div>
 
       <div class="alert-container">
-        <p class="alert"><strong>Alert:</strong> You have unread messages</p>
+        <p class="alert" id="alert"><strong>Alert:</strong> You have unread messages</p>
         <p class="alert-close">x</p>
       </div>
+    <!--Data Sets-->
+      <section class="daily-traffic-container data-set">
+        <h5><strong>TRAFFIC</strong></h5>
+        <ul class="traffic-nav">
+          <li class="traffic-nav-link">Hourly</li>
+          <li class="traffic-nav-link">Daily</li>
+          <li class="traffic-nav-link active">Weekly</li>
+          <li class="traffic-nav-link">Monthly</li>
+          </ul>
+        <canvas id="daily-traffic-chart"></canvas>
+      </section>
 
-      <div class="data-sets">
-        <div class="data-set">
-          <h5><b>TRAFFIC</b></h5>
+      <section class="bar-donut-container">
+        <div class="bar-chart data-set">
+          <h5><strong>DAILY TRAFFIC</strong></h5>
+          <canvas id="bar-chart"></canvas>
         </div>
-        <hr>
-        <div class="data-set">
-          <h5><b>DAILY TRAFFIC</b></h5>
+        
+        <div class="donut-chart data-set">
+          <h5><strong>MOBILE USERS</strong></h5>
+          <canvas id="donut-chart"></canvas>
         </div>
-        <hr>
-        <div class="data-set">
-          <h5><b>MOBILE USERS</b></h5>
-        </div>
-        <hr>
-        <div class="data-set">
-          <h5><b>SOCIAL STATS</b></h5>
-          
-        </div>
-        <hr>
-      </div>
+      </section>
 
+      <section class="social-stats">
+        <div class="social">
+          <!--icon-->
+          <a href="#"><img class="social-icon" src="svgs/facebook.svg" alt="Facebook icon"></a>
+          <!--name-->
+          <h4>Facebook</h4>
+          <!--number-->
+          <p class="social-numbers">10,320</p>
+        </div>
+      </section>
       <!-- The rest of the html for the project goes here inside of the main element -->
     </main>
 
   </div>
-
   
+  <!-- JavaScript files for the project go here -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
