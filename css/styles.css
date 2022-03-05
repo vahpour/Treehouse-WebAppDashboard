@@ -239,7 +239,7 @@ h5 {
 }
 
 .social-image img{
-  fill:#FFFFFF;
+  filter: invert(1);
 }
 
 .social-text{
@@ -313,6 +313,11 @@ h5 {
     padding-left: 40px;
     padding-bottom: 20px;
   }
+
+  .active{
+    background-color: #81c98f;
+  }
+
   .bar-donut-container {
     display: flex;
     border-right: 1px solid #dfdfdf;
